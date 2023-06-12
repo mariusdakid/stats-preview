@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: rgb(9, 11, 26);
+}
+
+.container{
+    display: flex;
+    width: 500px;
+}
+
+.first{
+    background-color: rgb(27, 25, 56);
+    padding: 2rem;
+    width: 50%;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.first .wrapper > p{
+    color:  rgba(255, 255, 255, 0.75);
+    font-size: 8px;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+span{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.second{
+    background-color: rgba(164, 76, 219, 0.567);
+    background-image: url(images/image-header-desktop.jpg);
+    background-blend-mode: overlay;
+    width: 50%;
+    background-size: cover;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.mobile{
+    display: none;
+}
+
+.insight{
+    color: rgb(175, 109, 216);
+}
+
+.stats{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.stats h4{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+}
+
+.stats p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 8px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+       display: flex;
+       flex-direction: column-reverse;
+        width: 90%;
+        margin: 2rem 0;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first{
+        background-color: rgb(27, 25, 56);
+        padding: 2rem;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .second{
+        background-color: rgba(150, 41, 219, 0.567);
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 200px;
+        background-image: url(images/image-header-mobile.jpg);
+    }
+
+    .stats{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.6rem;
+    }
+
+    body{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        background-color: rgb(9, 11, 26);
+    }
+}
+
